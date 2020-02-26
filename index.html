@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="estilo.css">
+	<title>Formulario Credito</title>
+     <script type="text/javascript" src="app.js"></script> 
+</head>
+<body>
+
+	<div class="container">
+		<div class="form__top">
+			<h2>Nube <span>Credito &#x26c5 </span></h2>
+		</div>		
+		<form class="form__reg" action="">
+			<input class="input" type="text" id="name" name="name" placeholder="&#128100;  Nombre" required autofocus>
+            <input class="input" type="text" id="addr" name="addr" placeholder="&#x1f3d8;  Dirección" required>
+            <input class="input" type="text" id="tel" name="tel" placeholder="&#x260f;  Teléfono" required>
+            <input class="input" type="text" id="age" name="age" placeholder="&#x270f;  Edad" required>
+            <input class="input" type="text" id="mail" name="mail" placeholder="&#x2709;  Correo electronico" required>
+            <input class="input" type="text" id="city" name="city" placeholder="&#x26ef;  Ciudad" required>
+            <br>
+            
+            <label for="sala">Posee propiedades propias</label>
+        
+  <input type="radio" name="pro" value="Si"> Si<br>
+  <input type="radio" name="pro" value="No"> No<br>
+    
+            <br>
+            
+            <label for="sala">Rango de salario:</label>
+            <br>
+             <select id="sala">
+                <option value="select">Seleccione....</option>
+                <option value="1 SMMLV">1 SMMLV</option>
+                <option value="2 SMMLV">2 SMMLV</option>
+                <option value="3 SMMLV">3 SMMLV</option>
+                <option value="4 SMMLV">4 SMMLV</option>
+                <option value="4 SMMLV">5 SMMLV</option>
+                <option value="4 SMMLV">6 SMMLV</option>
+                <option value="4 SMMLV">7 SMMLV</option>
+                <option value="4 SMMLV">8 SMMLV o más</option>
+             </select>
+            
+            <br>
+            <label for="pres">Tipo de Prestamo:</label>
+            <br>
+             <select id="pres">
+                <option value="select">Seleccione....</option>
+                <option value="libre">Libre inversión</option>
+                <option value="estudio">Estudio</option>
+                <option value="consumo">Consumo</option>
+                <option value="vivienda">Vivienda</option>
+                <option value="vehiculos">Vehiculos</option>
+                <option value="locales">Locales y otros</option>
+                <option value="cartera">Cartera comercial</option>
+             </select>
+              
+        <div class="btn__form">
+            	<input class="btn__submit" type="button" onclick="getData()" value="Registrar" > 
+            
+            </div>
+		</form>
+
+	</div>	
+    
+     <center> 
+        <h7 id="variable"></h7>
+            </center>
+       
+</body>
+       
+</html>
